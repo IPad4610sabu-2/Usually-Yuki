@@ -108,13 +108,14 @@ def get_data(videoid):
 def getting_data(videoid):
     urls = [
         f"https://just-frequent-network.glitch.me/api/{urllib.parse.quote(videoid)}",
-        f"https://amenable-charm-lute.glitch.me/api/login/{urllib.parse.quote(videoid)}",
-        f"https://free-sudden-kiss.glitch.me/api/login/{urllib.parse.quote(videoid)}",
-        f"https://wtserver1.glitch.me/api/login/{urllib.parse.quote(videoid)}",
-        f"https://wataamee.glitch.me/api/{urllib.parse.quote(videoid)}",
-        f"https://natural-voltaic-titanium.glitch.me/api/login/{urllib.parse.quote(videoid)}",
-        f"https://jade-highfalutin-account.glitch.me/api/login/{urllib.parse.quote(videoid)}",
-        f"https://watawatawata.glitch.me/api/login/{urllib.parse.quote(videoid)}"
+        f"https://streamitedu.glitch.me/api/server/v1/{urllib.parse.quote(videoid)}",
+        f"https://streamitedu.glitch.me/api/server/v2/{urllib.parse.quote(videoid)}",
+        f"https://streamitedu.glitch.me/api/server/v3/{urllib.parse.quote(videoid)}"
+        f"https://streamitedu.glitch.me/api/server/v4/{urllib.parse.quote(videoid)}",
+        f"https://streamitedu.glitch.me/api/server/v5/{urllib.parse.quote(videoid)}",
+        f"https://streamitedu.glitch.me/api/server/v6/{urllib.parse.quote(videoid)}",
+        f"https://streamitedu.glitch.me/api/server/v7/{urllib.parse.quote(videoid)}",
+        f"https://streamitedu.glitch.me/api/server/v8/{urllib.parse.quote(videoid)}"
     ]
     for url in urls:
         response = requests.get(url)
