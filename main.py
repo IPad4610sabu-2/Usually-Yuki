@@ -155,7 +155,7 @@ def get_search(q,page):
             else:
                 return {"author":i["author"],"id":i["authorId"],"thumbnail":r"https://"+i["authorThumbnails"][-1]["url"],"type":"channel"}
     return [load_search(i) for i in t]
-
+    
 def get_channel(channelid):
     global apichannels
     t = json.loads(apichannelrequest(r"api/v1/channels/"+ urllib.parse.quote(channelid)))
